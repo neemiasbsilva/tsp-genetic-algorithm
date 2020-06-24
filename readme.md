@@ -1,4 +1,5 @@
-# Using Genetic Algorithm to Solve the Traveling Saleman Problem
+# Using Genetic Algorithm to Solve the Traveling Salesman Problem
+
 
 
 

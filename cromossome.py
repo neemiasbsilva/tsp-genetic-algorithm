@@ -44,7 +44,7 @@ class Cromossome:
 
     # return one cromossome
     def createRandomCromossome(self):
-        random.seed(0)
+        # random.seed(0)
         copy = self.defaultCromossome.copy()
         random.shuffle(copy)
         return copy

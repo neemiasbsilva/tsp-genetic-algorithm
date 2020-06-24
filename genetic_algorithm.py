@@ -13,20 +13,19 @@ class GeneticAlgorithm:
         for i in range(0, self.populationSize):
             self.population.append(self.cromossomeOperation.createRandomCromossome())
         self.mutationProbability = mutationProbability  # private attribute
-        self.numIterations = numIteration  # private attribute
+        self.numIteration = numIteration  # private attribute
         self.pcross = pcross  # private attribute
         self.best = [] # private attribute
-        self.isChange = False # private attribute
+        self.isChange = False    # private attribute
 
     def setBestCromossome(self):
         # initially the first one is the best
         bestIndex = 0
         size = self.populationSize
-
         for i in range(1, size):
             if self.cromossomeOperation.objectiveFunction(self.population[i], self.region) < self.cromossomeOperation.objectiveFunction(self.population[bestIndex], self.region):
                 bestIndex = i
-                
+        
         if len(self.best) == 0 or self.cromossomeOperation.objectiveFunction(self.population[bestIndex], self.region) < self.cromossomeOperation.objectiveFunction(self.best, self.region):
             self.best = self.population[bestIndex]
             self.isChange = True
@@ -52,7 +51,7 @@ class GeneticAlgorithm:
         childs = []
         size = self.populationSize
         
-        random.seed(0)
+        # r andom.seed(0)
         random.shuffle(self.population)
         # generation of childs
         for i in range(0, size-1): 
@@ -69,7 +68,7 @@ class GeneticAlgorithm:
 
     def run(self):
         iteration = 0
-        while iteration < self.numIterations:
+        while iteration < self.numIteration:
             self.crossover()
             self.mutation()
             self.setBestCromossome()
@@ -85,8 +84,8 @@ class GeneticAlgorithm:
 
     
     def printBestSolution(self):
-        print("The best cromossome is", end=" ")
-        if not self.isChange:
+        if self.isChange:
+            print("The best cromossome is", end=" ")
             self.cromossomeOperation.printCromossome(self.best, self.region)
 
 

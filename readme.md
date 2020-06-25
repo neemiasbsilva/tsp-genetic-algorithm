@@ -53,7 +53,7 @@ When completed, the repository will be ready usage.
 
 ### Usage
 
-To run this reposoty, please open the terminal and run the following commands :simple_smile: :
+To run this reposoty, please open the terminal and run the following commands:
 
 ```
  sh run.sh

@@ -51,6 +51,20 @@ And the last step is install the os library:
 
 When completed, the repository will be ready usage.
 
+### Usage
+
+To run this reposoty, please open the terminal and run the following commands :simple_smile: :
+
+```
+ sh run.sh
+```
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as approp  riate.
+
 ##
 
 <p align="center"><b>Sincerely:</b> <a href="https://github.com/neemiasbsilva">Neemias B. da Silva</a></p>

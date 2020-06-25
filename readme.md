@@ -53,7 +53,7 @@ When completed, the repository will be ready to usage.
 
 ### Usage
 
-To run this repositoy, please open the terminal and run the following commands:
+To run this repository, please open the terminal and run the following command:
 
 ```
  sh run.sh

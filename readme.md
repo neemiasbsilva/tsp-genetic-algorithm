@@ -1,6 +1,6 @@
-# Using Genetic Algorithm to Solve the Travelling Salesman Problem
+# Applying Genetic Algorithm to Solve the Travelling Salesman Problem
 
-## Travelling Salesman Problem (TCP)
+## Travelling Salesman Problem (TSP)
 
 <p align="center"><img src="images/travelling_salesman_problem.png" width="55%" height="85%"></p> 
 <h6 align="center">Example of solution a travelling salesman problem. For more details, please <a href="https://simple.wikipedia.org/wiki/Travelling_salesman_problem">click here</a>.</h6>
@@ -20,7 +20,7 @@ GA is a search technique used in computing to find true or approximate solutions
 What things you need to undertand this repository
 
 ```
- Good knowledgment in python3, and arguments using ".sh" (command-line interpreter).
+ Good knowledgment in python3, and know how to use .sh file ".sh" (command-line interpreter).
 ```
 
 ### Installing
@@ -49,11 +49,11 @@ And the last step is install the os library:
  pip install os-sys
 ```
 
-When completed, the repository will be ready usage.
+When completed, the repository will be ready to usage.
 
 ### Usage
 
-To run this reposoty, please open the terminal and run the following commands:
+To run this repositoy, please open the terminal and run the following commands:
 
 ```
  sh run.sh
